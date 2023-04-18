@@ -11,6 +11,10 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-btn {
   background-color: var(--red-color);
   color: var(--yellow-color);
@@ -190,8 +194,14 @@ body {
 
 /*  */
 
-.blog .box {
-  border: 1px solid #777;
+.blog .card img {
+  transition: .3s;
+}
+
+.blog .card img:hover {
+  cursor: pointer;
+  transform: scale(.95);
+  box-shadow: 0 0 5px 5px var(--green-color);
 }
 
 /*  */
@@ -256,20 +266,20 @@ body {
   padding: 5px 10px;
 }
 
-.icons .fa-facebook {
-  color: #2828ff;
+.icons .facebook {
+  color: #1877f2;
 }
 
-.icons .fa-twitter {
-  color: #5372f8;
+.icons .twitter {
+  color: #1da1f2;
 }
 
-.icons .fa-linkedin {
-  color: #0aabff;
+.icons .linkedin {
+  color: #0a66c2;
 }
 
-.icons .fa-youtube {
-  color: red;
+.icons .youtube {
+  color: #f00;
 }
 
 /* end footer */
